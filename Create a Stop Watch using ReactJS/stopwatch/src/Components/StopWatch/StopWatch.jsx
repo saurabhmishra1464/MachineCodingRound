@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./StopWatch.css";
 import Timer from "../Timer/Timer";
 import ControlButtons from "../ControlButtons/ControlButtons";
-
+import axios from "axios";
 function StopWatch() {
 	const [isActive, setIsActive] = useState(false);
 	const [isPaused, setIsPaused] = useState(true);
@@ -37,6 +37,26 @@ function StopWatch() {
 		setTime(0);
 	};
 
+	const login = async ()=> {
+		try {
+		  const response = await axios.post('http://localhost:5001/api/Account/Login', {
+			email: "saurabhmishra1464@gmail.com",
+			password: "@Sanu12345",
+		  },{withCredentials: true});
+	  
+		  if (response?.status === 200) {
+			console.log(response);
+			return  "Login Successful" ;
+		  } else {
+			return { success: false, errors: response.data };
+		  }
+		} catch (error) {
+		  console.log(error);
+		//   const message = handleError(error as Error);
+		  return error;
+		}
+	  }
+
 	return (
 		<div className="stop-watch">
 			<Timer time={time} />
@@ -46,6 +66,7 @@ function StopWatch() {
 				handleStart={handleStart}
 				handlePauseResume={handlePauseResume}
 				handleReset={handleReset}
+				login = {login}
 			/>
 		</div>
 	);
