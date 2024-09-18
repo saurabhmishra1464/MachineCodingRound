@@ -1,0 +1,49 @@
+
+.container{
+ height: 50vh;
+ height: 50vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.add-todo{
+    height: 19vh;
+    width: 66vw;
+    margin:20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todolist{
+    height: 7vh;
+    width: 54vw;
+    margin: 20px auto;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+    border: 1px solid;
+    height: 20px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todoinput{
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.25rem; /* rounded */
+    padding: 0.5rem 0.75rem; /* px-3 py-2 */
+    outline: none;
+    width: 30rem;
+    height: 2rem;
+}
