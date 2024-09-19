@@ -1,0 +1,10 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.captchaShow{
+    height: 70px;
+    width: 150px;
+    background-color: antiquewhite;
+}
