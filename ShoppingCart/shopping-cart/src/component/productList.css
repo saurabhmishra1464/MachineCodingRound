@@ -1,0 +1,167 @@
+
+.container {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.cartHeading {
+    height: 127px;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+}
+
+.inputproductSearch {
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: rgb(255, 245, 245);
+    border-radius: 17px;
+    ;
+}
+
+ img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.productList {
+    display: flex;
+    gap: 60px;
+}
+
+.btn {
+    height: 25px;
+    width: 125px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.partitonLine {
+    height: 3px;
+    width: 75rem;
+    background-color: green;
+}
+
+.partitonLineCart{
+    height: 3px;
+    width: 15rem;
+    background-color: green;
+}
+
+/* .cart-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.cartpage {
+    width: 300px;
+    background-color: #fff9e6;
+    border: 2px solid green;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+    ;
+}
+
+.cartpage.active{
+    display: '';
+}
+
+.cartpage.hidden{
+    display: none;
+}
+
+.cartpage h1 {
+    font-size: 25px;
+}
+
+.product-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+    padding: 5px 10px;
+    border: none;
+  
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-actions{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.removebtn,.inquantity{
+    font-size: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+.decquantity{
+    font-size: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+}
+
+h4{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+.container{
+    
+}
+    .productList {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .product {
+        width: 50%;
+    }
+
+    .cart {
+        min-width: unset;
+        margin-top: 30px;
+    }
+}
