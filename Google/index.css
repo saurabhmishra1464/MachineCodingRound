@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+.site-navigation{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+}
+
+.google-links{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.mic-icon{
+    font-size: 20px;
+    width: 25px;
+}
+
+.input-section{
+    display: flex;
+    width: 40vw;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    padding: 5px 10px;
+}
+
+.search-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-input{
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.sigin-btn{
+    color: white;
+    padding: 10px 25px;
+    margin-left: 10px;
+    background-color: rgb(67, 132, 244);
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#google_image{
+    height: 250px;
+}
+
+
+.customize_size{
+    position: absolute;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 30px;
+    padding: 0px 10px;
+    top: 90vh;
+    left: 87vw;
+}
+
